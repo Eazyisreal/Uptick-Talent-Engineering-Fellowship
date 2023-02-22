@@ -3,7 +3,7 @@ from rest_framework import routers
 from notes import views
 
 router = routers.DefaultRouter()
-router.register(r'notes', views.NoteViewSet)
+router.register(r'notes', views.NoteListView)
 
 urlpatterns = [
     path('', include(router.urls)),
